@@ -5,69 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brassworks Productions</title>
     <meta name="description"
-          content="Brassworks Productions app and game hub. Access app pages, privacy policies, and official information." />
+          content="Official app and game hub for Brassworks Productions. Privacy policies, support, and official pages." />
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header class="site-header">
-        <div class="container">
-            <div class="brand">
-                <h1>Brassworks Productions</h1>
-                <p>Official app and game pages</p>
-            </div>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a class="logo-block" href="index.html">
+                <span class="logo-mark">B</span>
+                <span class="logo-text">
+                    <strong>Brassworks Productions</strong>
+                    <small>Apps & Games</small>
+                </span>
+            </a>
+
+            <nav class="top-nav" aria-label="Main navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="ring-runner/index.html">Ring Runner</a>
+                <a href="ring-runner/privacy.html">Privacy Policy</a>
+                <a href="#support">Support</a>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section class="hero card">
-            <h2>Welcome</h2>
-            <p>
-                This site hosts official pages for apps and games published by Brassworks Productions,
-                including privacy policies, app information, and support links.
-            </p>
-        </section>
+    <div class="site-shell">
+        <main class="main-content">
+            <section class="hero-panel">
+                <div class="eyebrow">Official Studio Hub</div>
+                <h1>Games, policies, and support in one place.</h1>
+                <p class="hero-copy">
+                    Welcome to the official website for Brassworks Productions. This site hosts app pages,
+                    privacy policies, and support information for current and future releases.
+                </p>
 
-        <section class="card">
-            <h2>Apps & Games</h2>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="ring-runner/index.html">View Ring Runner</a>
+                    <a class="btn btn-secondary" href="ring-runner/privacy.html">Open Privacy Policy</a>
+                </div>
+            </section>
 
-            <div class="app-grid">
-                <article class="app-card">
-                    <div class="app-card-content">
-                        <h3>Ring Runner</h3>
-                        <p>
-                            A fast-paced endless runner where timing, momentum, and ring collection drive the action.
-                        </p>
-                        <div class="button-row">
-                            <a class="button" href="ring-runner/">View App Page</a>
-                            <a class="button button-secondary" href="ring-runner/privacy.html">Privacy Policy</a>
-                        </div>
+            <section class="content-grid">
+                <article class="card feature-card">
+                    <div class="card-header">
+                        <span class="section-tag">Featured Title</span>
+                        <h2>Ring Runner</h2>
+                    </div>
+
+                    <p>
+                        Ring Runner is a fast-paced endless runner built around movement, timing, hazard
+                        avoidance, and ring collection. The official app page includes support information and
+                        the privacy policy required for store publishing.
+                    </p>
+
+                    <div class="action-row">
+                        <a class="btn btn-primary" href="ring-runner/index.html">App Page</a>
+                        <a class="btn btn-secondary" href="ring-runner/privacy.html">Privacy Policy</a>
                     </div>
                 </article>
 
-                <article class="app-card app-card-placeholder">
-                    <div class="app-card-content">
-                        <h3>More apps coming soon</h3>
-                        <p>
-                            Future titles and tools will be added here as they are published.
-                        </p>
+                <article class="card">
+                    <div class="card-header">
+                        <span class="section-tag">Studio Info</span>
+                        <h2>What this site is for</h2>
                     </div>
+
+                    <ul class="clean-list">
+                        <li>Official pages for published apps and games</li>
+                        <li>Public privacy policy links for Google Play</li>
+                        <li>Support contact details for users</li>
+                        <li>Space for future app releases</li>
+                    </ul>
                 </article>
+
+                <article class="card">
+                    <div class="card-header">
+                        <span class="section-tag">Coming Soon</span>
+                        <h2>Future Releases</h2>
+                    </div>
+
+                    <p>
+                        This hub is designed to grow with your projects. As you release more apps, each one can
+                        get its own page and privacy policy without needing a new website each time.
+                    </p>
+                </article>
+
+                <article class="card" id="support">
+                    <div class="card-header">
+                        <span class="section-tag">Support</span>
+                        <h2>Contact</h2>
+                    </div>
+
+                    <p>
+                        For support, privacy questions, or general enquiries, use the email below.
+                    </p>
+
+                    <p class="contact-line">
+                        <a href="mailto:gamerguru81@outlook.com">gamerguru81@outlook.com</a>
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="sidebar-panel">
+                <h3>Navigation</h3>
+                <nav class="sidebar-nav" aria-label="Sidebar navigation">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="ring-runner/index.html">Ring Runner</a>
+                    <a href="ring-runner/privacy.html">Privacy Policy</a>
+                    <a href="#support">Support</a>
+                </nav>
             </div>
-        </section>
 
-        <section class="card">
-            <h2>Contact</h2>
-            <p>
-                For support or enquiries, update this section with your preferred contact email before publishing.
-            </p>
-            <p>
-                Example: <a href="mailto:you@example.com">you@example.com</a>
-            </p>
-        </section>
-    </main>
+            <div class="sidebar-panel">
+                <h3>Quick Info</h3>
+                <div class="mini-info">
+                    <p><strong>Studio</strong><br />Brassworks Productions</p>
+                    <p><strong>Email</strong><br />gamerguru81@outlook.com</p>
+                </div>
+            </div>
+        </aside>
+    </div>
 
     <footer class="site-footer">
-        <div class="container">
+        <div class="footer-inner">
             <p>&copy; 2026 Brassworks Productions. All rights reserved.</p>
         </div>
     </footer>
