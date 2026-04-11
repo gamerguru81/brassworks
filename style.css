@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f1115;
+    color: #f2f4f8;
+    line-height: 1.6;
+}
+
+a {
+    color: #8ecbff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+.container {
+    width: min(1100px, calc(100% - 32px));
+    margin: 0 auto;
+}
+
+.site-header {
+    background: linear-gradient(180deg, #171b23 0%, #101318 100%);
+    border-bottom: 1px solid #242a35;
+    padding: 40px 0 28px;
+}
+
+.brand h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.brand p {
+    margin: 8px 0 0;
+    color: #b8c0cc;
+}
+
+main {
+    padding: 32px 0 48px;
+}
+
+.card {
+    background: #171b23;
+    border: 1px solid #262d39;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+}
+
+    .hero h2,
+    .card h2 {
+        margin-top: 0;
+    }
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.app-card {
+    background: #10141b;
+    border: 1px solid #2b3340;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.app-card-content {
+    padding: 20px;
+}
+
+.app-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.app-card-placeholder {
+    opacity: 0.9;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.button {
+    display: inline-block;
+    background: #4ea8ff;
+    color: #08111c;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+    .button:hover {
+        text-decoration: none;
+        filter: brightness(1.05);
+    }
+
+.button-secondary {
+    background: transparent;
+    color: #dce6f2;
+    border: 1px solid #3a4658;
+}
+
+.site-footer {
+    border-top: 1px solid #242a35;
+    padding: 22px 0 36px;
+    color: #aab4c2;
+}
+
+.app-hero {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.app-icon {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 28px;
+    border: 1px solid #2c3442;
+    background: #0d1016;
+}
+
+.meta-list {
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+.policy-section h2,
+.policy-section h3 {
+    margin-top: 0;
+}
+
+.policy-section h3 {
+    margin-top: 24px;
+}
+
+@media (max-width: 700px) {
+    .app-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .app-icon {
+        width: 110px;
+        height: 110px;
+    }
+
+    .brand h1 {
+        font-size: 1.8rem;
+    }
+}
