@@ -10,18 +10,19 @@
 
 <header class="topbar">
   <div class="wrap topbar-inner">
-    <div class="brand">
+    <a class="brand" href="index.html">
       <span class="brand-mark">BE</span>
       <span class="brand-text">
         <strong>Brassworks Entertainment</strong>
         <small>Official Games & Apps</small>
       </span>
-    </div>
+    </a>
 
     <nav class="top-nav" aria-label="Main navigation">
       <a class="active" href="index.html">Home</a>
       <a href="zinko-flap/index.html">Zinko Flap</a>
-      <a href="ring-runner/index.html">Ring Runner</a>
+      <a href="zinko-zoom/index.html">Zinko Zoom</a>
+      <a href="zinko.html">Meet Zinko</a>
     </nav>
   </div>
 </header>
@@ -39,7 +40,7 @@
 
         <div class="button-row">
           <a class="btn btn-primary" href="zinko-flap/index.html">View Zinko Flap</a>
-          <a class="btn btn-secondary" href="ring-runner/index.html">View Ring Runner</a>
+          <a class="btn btn-secondary" href="zinko-zoom/index.html">View Zinko Zoom</a>
         </div>
       </div>
 
@@ -81,6 +82,34 @@
 
     <section class="home-section">
       <div class="section-heading">
+        <div class="section-label">Under Development</div>
+        <h2>Projects In Development</h2>
+        <p>Games we are actively building and improving.</p>
+      </div>
+
+      <div class="grid single-column-grid">
+        <article class="card">
+          <div class="game-feature-header">
+            <img src="images/ZinkoZoom1.png" alt="Zinko Zoom artwork" class="game-feature-icon" />
+            <div>
+              <h3>Zinko Zoom</h3>
+              <p>
+                A fast side-scroll runner where Zinko races through colourful worlds, avoids hazards,
+                and collects glowing DNA strands.
+              </p>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <a class="btn btn-primary" href="zinko-zoom/index.html">Game Page</a>
+            <a class="btn btn-secondary" href="zinko-zoom/privacy.html">Privacy Policy</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section">
+      <div class="section-heading">
         <div class="section-label">Join Testing</div>
         <h2>Become a Tester</h2>
         <p>Get early access to Brassworks apps and help shape the games.</p>
@@ -95,14 +124,7 @@
               id="tester-email"
               placeholder="Enter your email"
               required
-              style="
-                padding: 12px;
-                width: 260px;
-                max-width: 100%;
-                border-radius: 10px;
-                border: none;
-                margin-top: 10px;
-              "
+              style="padding:12px;width:260px;max-width:100%;border-radius:10px;border:none;margin-top:10px;"
             />
 
             <br><br>
@@ -111,56 +133,16 @@
               Register for Testing
             </button>
 
-            <p id="tester-form-message" style="margin-top: 15px; color: var(--text-muted);"></p>
+            <p id="tester-form-message" style="margin-top:15px;color:var(--text-muted);"></p>
           </form>
 
-          <p style="margin-top: 15px; color: var(--text-muted);">
+          <p style="margin-top:15px;color:var(--text-muted);">
             After approval, you'll receive access instructions.
           </p>
 
-          <p style="font-size: 13px; color: var(--text-muted);">
+          <p style="font-size:13px;color:var(--text-muted);">
             ⚠ Must use the same Google account on your Android device
           </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="home-section">
-      <div class="section-heading">
-        <div class="section-label">Under Development</div>
-        <h2>Projects In Development</h2>
-        <p>Games we are actively building and improving.</p>
-      </div>
-
-      <div class="grid single-column-grid">
-        <article class="card">
-          <div class="game-feature-header">
-            <img src="images/ring-runner-icon.png" alt="Ring Runner icon" class="game-feature-icon" />
-            <div>
-              <h3>Ring Runner</h3>
-              <p>Fast-paced endless runner focused on timing, rhythm, and arcade progression. Currently under development.</p>
-            </div>
-          </div>
-
-          <div class="button-row">
-            <a class="btn btn-primary" href="ring-runner/index.html">Game Page</a>
-            <a class="btn btn-secondary" href="ring-runner/privacy.html">Privacy Policy</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="home-section">
-      <div class="section-heading">
-        <div class="section-label">More To Come</div>
-        <h2>Future Releases</h2>
-        <p>Additional games and projects will appear here as they are announced.</p>
-      </div>
-
-      <div class="grid single-column-grid">
-        <article class="card">
-          <h3>More projects coming soon</h3>
-          <p>As new games enter development, testing, or release, they will be added here with their own pages and policy links.</p>
         </article>
       </div>
     </section>
@@ -173,7 +155,8 @@
       <nav class="side-nav" aria-label="Sidebar navigation">
         <a class="active" href="index.html">Home</a>
         <a href="zinko-flap/index.html">Zinko Flap</a>
-        <a href="ring-runner/index.html">Ring Runner</a>
+        <a href="zinko-zoom/index.html">Zinko Zoom</a>
+        <a href="zinko.html">Meet Zinko</a>
       </nav>
     </section>
 
@@ -191,22 +174,10 @@
 
     <section class="sidebar-card">
       <h3>Meet Zinko</h3>
-      <div class="info-block" style="text-align: center;">
-        <img
-          src="images/Zinko_chilled2.png"
-          alt="Zinko character"
-          style="
-            width: 150px;
-            max-width: 100%;
-            margin: 0 auto 14px;
-            border-radius: 14px;
-            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
-          "
-        />
-        <p>
-          Curious, determined, and a little chaotic — Zinko is always chasing the next challenge.
-        </p>
-        <div class="button-row" style="justify-content: center; margin-top: 14px;">
+      <div class="info-block" style="text-align:center;">
+        <img src="images/Zinko_thumb.png" alt="Zinko character" class="zinko-sidebar-hero" />
+        <p>Curious, determined, and a little chaotic — Zinko is always chasing the next challenge.</p>
+        <div class="button-row" style="justify-content:center;margin-top:14px;">
           <a class="btn btn-primary" href="zinko.html">Meet Zinko</a>
         </div>
       </div>
@@ -238,9 +209,7 @@
       const response = await fetch('https://formspree.io/f/mgorzlqk', {
         method: 'POST',
         body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
+        headers: { 'Accept': 'application/json' }
       });
 
       if (response.ok) {
