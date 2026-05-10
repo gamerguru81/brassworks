@@ -144,9 +144,10 @@ a:hover {
   border-color: rgba(89, 185, 255, 0.3);
 }
 
+/* MAIN TWO-COLUMN LAYOUT */
 .page-shell {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) var(--sidebar);
+  grid-template-columns: minmax(0, calc(100% - var(--sidebar) - 28px)) var(--sidebar);
   gap: 28px;
   align-items: start;
   padding: 34px 0 0;
@@ -154,6 +155,7 @@ a:hover {
 
 .main-column {
   min-width: 0;
+  width: 100%;
 }
 
 .home-hero,
@@ -417,9 +419,11 @@ a:hover {
   0% {
     filter: drop-shadow(0 0 10px rgba(255, 150, 0, 0.20));
   }
+
   50% {
     filter: drop-shadow(0 0 26px rgba(255, 190, 0, 0.52));
   }
+
   100% {
     filter: drop-shadow(0 0 10px rgba(255, 150, 0, 0.20));
   }
@@ -512,7 +516,7 @@ a:hover {
   margin-top: 18px;
 }
 
-/* ADDED: Zinko Flap full release banner */
+/* Zinko Flap full release banner */
 .release-banner {
   background: linear-gradient(
     135deg,
@@ -546,7 +550,7 @@ a:hover {
   box-shadow: 0 10px 22px rgba(89, 185, 255, 0.18);
 }
 
-/* ADDED: Syndicate Files images */
+/* Syndicate Files images */
 .feature-banner-image {
   width: 100%;
   border-radius: 24px;
@@ -558,6 +562,17 @@ a:hover {
 .detective-icon {
   object-fit: contain;
   background: rgba(255, 255, 255, 0.03);
+}
+
+/* Extra safety so big images/text do not crush the layout */
+.main-column > *,
+.card,
+.hero,
+.home-hero,
+.feature-banner-image,
+.app-banner,
+.app-icon {
+  max-width: 100%;
 }
 
 @media (max-width: 1180px) {
