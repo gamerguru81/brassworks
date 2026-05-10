@@ -1,60 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zinko Flap - Brassworks Entertainment</title>
+  <title>Meet Zinko - Brassworks Entertainment</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="site-header">
-  <div class="logo">Brassworks Entertainment</div>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="brand">
+      <span class="brand-mark">BE</span>
+      <span class="brand-text">
+        <strong>Brassworks Entertainment</strong>
+        <small>Official Games & Apps</small>
+      </span>
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="zinko.html">Zinko Flap</a>
-    <a href="where-in-the-world.html">Where in the World is Zinko</a>
-  </nav>
+```
+<nav class="top-nav">
+  <a href="index.html">Home</a>
+  <a href="zinko-flap/index.html">Zinko Flap</a>
+  <a href="ring-runner/index.html">Ring Runner</a>
+</nav>
+```
+
+  </div>
 </header>
 
-<section class="game-hero zinko-flap-hero">
-  <div class="game-hero-text">
-    <h1>Zinko Flap</h1>
-    <p>Help Zinko flap, dodge, survive, and chase new high scores.</p>
+<div class="wrap page-shell">
+  <main class="main-column">
 
-    <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.brassworks.zinkoflap" target="_blank" rel="noopener">
-      Get it on Google Play
-    </a>
+```
+<!-- 🔥 HERO TITLE SECTION -->
+<section class="home-hero" style="position:relative; text-align:center; overflow:hidden;">
+
+  <!-- BACKGROUND ZINKO -->
+  <img
+    src="images/Zinko_thumb.png"
+    alt="Zinko"
+    style="
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%, -50%);
+      width:420px;
+      opacity:0.50;
+      z-index:1;
+      pointer-events:none;
+    "
+  />
+
+  <!-- FOREGROUND CONTENT -->
+  <div style="position:relative; z-index:2;">
+    <div class="hero-badge">Character Profile</div>
+
+    <!-- SIGN -->
+    <img
+      src="images/ZinkoSign.png"
+      class="zinko-logo"
+      alt="Zinko Logo"
+      style="
+        width:380px;
+        max-width:90%;
+        margin:260px auto 20px;
+      display:block;
+      "
+    />
+
+    <p class="hero-copy" style="max-width:700px; margin:0 auto;">
+      Zinko is the heart of Brassworks Entertainment — a fearless flyer with a stubborn streak and a love for chaos.
+    </p>
   </div>
 
-  <img class="hero-character" src="images/ZinkoFlapIcon.png" alt="Zinko Flap">
 </section>
 
-<main class="container">
+<!-- BIO -->
+<section class="home-section">
+  <div class="section-heading">
+    <h2>Biography</h2>
+  </div>
 
-  <section class="content-panel">
-    <h2>Now Available on Google Play</h2>
-    <p>
-      Zinko Flap is officially in full production on Google Play. Jump in, test your reflexes,
-      collect points, unlock milestones, and see how far you can take Zinko.
+  <div class="grid single-column-grid">
+    <article class="card">
+      <p>
+        Zinko isn’t just a character — he’s a survivor. Built for speed and reaction,
+        he lives for the challenge of navigating impossible paths.
+      </p>
+
+      <p>
+        Whether it’s soaring through tight gaps or pushing past his limits,
+        Zinko never backs down from a challenge.
+      </p>
+
+      <p>
+        His world is unpredictable — and that’s exactly how he likes it.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="home-section">
+  <div class="section-heading">
+    <h2>Gallery</h2>
+  </div>
+
+  <div class="grid single-column-grid">
+    <article class="card">
+
+      <div style="
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap:16px;
+        align-items:start;
+      ">
+
+        <div style="text-align:center;">
+          <img src="images/Zinko_chilled2.png" style="width:110px; margin:auto;" />
+          <p style="font-size:12px; color:var(--text-muted);">Chilled</p>
+        </div>
+
+        <div style="text-align:center;">
+          <img src="images/Zinko_normal.png" style="width:110px; margin:auto;" />
+          <p style="font-size:12px; color:var(--text-muted);">Standard</p>
+        </div>
+
+        <div style="text-align:center;">
+          <img src="images/Zinko_thumb.png" style="width:110px; margin:auto;" />
+          <p style="font-size:12px; color:var(--text-muted);">Thumbs Up</p>
+        </div>
+
+      </div>
+
+    </article>
+  </div>
+</section>
+```
+
+  </main>
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+```
+<section class="sidebar-card">
+  <h3>Navigation</h3>
+  <nav class="side-nav">
+    <a href="index.html">Home</a>
+    <a href="zinko-flap/index.html">Zinko Flap</a>
+    <a href="ring-runner/index.html">Ring Runner</a>
+  </nav>
+</section>
+
+<section class="sidebar-card">
+  <h3>Zinko</h3>
+  <div style="text-align:center;">
+    <img src="images/Zinko_thumb.png" style="width:180px; margin:auto;" />
+    <p style="margin-top:10px;">
+      Friendly, energetic, and always ready for the next challenge.
     </p>
+  </div>
+</section>
 
-    <div class="button-row">
-      <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.brassworks.zinkoflap" target="_blank" rel="noopener">
-        Play Zinko Flap
-      </a>
+<section class="sidebar-card">
+  <h3>Studio</h3>
+  <p>
+    Brassworks Entertainment is building arcade-style games with a focus on fun, replayability, and strong visual identity.
+  </p>
+  <p>
+    Contact: <a href="mailto:gamerguru81@outlook.com">gamerguru81@outlook.com</a>
+  </p>
+</section>
+```
 
-      <a class="btn secondary" href="privacy.html">
-        Privacy Policy
-      </a>
-    </div>
-  </section>
+  </aside>
+</div>
 
-</main>
-
-<footer>
-  <p>&copy; 2026 Brassworks Entertainment. All rights reserved.</p>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <p>&copy; 2026 Brassworks Entertainment</p>
+  </div>
 </footer>
 
 </body>
